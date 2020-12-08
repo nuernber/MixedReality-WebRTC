@@ -82,7 +82,7 @@ So far the components added are only creating audio and video track sources, but
 
 A _transceiver_ is a "media pipe" (audio or video) through which the peer connection transport the media between the local and remote peers. The transceivers are configured on the [`PeerConnection`](xref:Microsoft.MixedReality.WebRTC.Unity.PeerConnection) component directly, and reference the [`AudioTrackSource`](xref:Microsoft.MixedReality.WebRTC.Unity.AudioTrackSource) and [`VideoTrackSource`](xref:Microsoft.MixedReality.WebRTC.Unity.VideoTrackSource) components to be used to send media, and the [`AudioReceiver`](xref:Microsoft.MixedReality.WebRTC.Unity.AudioReceiver) and [`VideoReceiver`](xref:Microsoft.MixedReality.WebRTC.Unity.VideoReceiver) components to be used to receive media.
 
-Let's add an audio transceiver and a video tranceiver, and attach to them the microphone and webcam sources to instruct the peer connection to send those media to the remote peer:
+Let's add an audio transceiver and a video transceiver, and attach to them the microphone and webcam sources to instruct the peer connection to send those media to the remote peer:
 
 - In the **Hierarchy** window, select the game object with the peer connection component.
 - In the **Inspector** window, under the **Transceivers** list, press the **+ Audio** and the **+ Video** to add an audio transceiver and a video transceiver, respectively.
